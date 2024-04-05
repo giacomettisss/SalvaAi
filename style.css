@@ -9,7 +9,20 @@ header {
     background-color: #007bff;
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: center;  
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: space-between; /* Espaça o conteúdo igualmente */
+}
+
+header img {
+    height: 100px; /* ou qualquer outra altura desejada */
+    /* se você quiser manter a imagem dentro das dimensões originais, use 'width: auto' */
+}
+
+.header-content {
+    flex-grow: 1; /* Faz a div crescer e ocupar o espaço disponível */
+    text-align: center; /* Centraliza o texto dentro da div */
 }
 
 main {
