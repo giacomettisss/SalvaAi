@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout com Espaço Lateral</title>
+    <style>
+        body {
+            margin: 0; /* Remove a margem padrão do corpo */
+            display: flex; /* Torna o corpo um contêiner flexível */
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            min-height: 100vh; /* Garante que o corpo tenha, no mínimo, a altura total da tela */
+        }
+
+        main {
+            max-width: 800px; /* Define a largura máxima da main */
+            width: 100%; /* Faz com que a main ocupe até 100% do espaço disponível, respeitando o max-width */
+            margin: 20px; /* Adiciona uma margem ao redor da main, criando o espaço em branco desejado */
+            /* Adicione mais estilos à main conforme necessário */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Conteúdo Principal</h1>
+        <p>Este é o conteúdo da main, que agora tem espaços em branco nas laterais.</p>
+    </main>
+</body>
+</html>
