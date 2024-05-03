@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login_style.css') }}">
     <title>Login</title>
 </head>
 <body>
-    <h2>Login</h2>
-    <form method="post" action="/login">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <button type="submit">Login</button>
-    </form>
-    {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            {% for category, message in messages %}
-                <div class="flash {{ category }}" style="color: red;">
-                    {{ message }}
-                </div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
-</body>
-</html>
+    <section class="area-login">
+        <div class="login">
+            <div>
+                <img src="images/logo.png">  <!-- arrumar depois -->
+            </div>
+
+            <form method="POST">
+                <input type="text" name="nome" placeholder="usuario" autofocus>
+                <input type="password" name="senha" placeholder="senha">
+                <input type="submit" value="entrar">
+            </form>
+            <p>Ainda não tem uma conta?<a href="#">Criar conta</a></p>
+        </div>
+        
+    </section>    
+    </body>
+
+</html> 

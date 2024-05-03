@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(18, 13, 65);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.area-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 44);
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+}
+
+.login form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login input {
+    margin-top: 10px;
+    background-color: rgb(10, 10, 47);
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 0.887);
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+}
+.login img{
+    width: 65px;
+    height: auto;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 14px;
+}
