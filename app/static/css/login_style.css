@@ -38,8 +38,9 @@ body {
     border-radius: 8px;
 }
 .login img{
-    width: 65px;
+    width: 100px;
     height: auto;
+    border-radius: 100px;
 }
 
 input::placeholder {
@@ -49,8 +50,19 @@ input::placeholder {
 
 form [type="submit"]{
     display: block;
-    background-color: rgba(29, 22, 78, 0.656);
-    font-size: 25px;
+    background-color: rgba(49, 38, 112, 0.719);
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.623);
+}
+
+a {
+    color: rgba(38, 0, 255, 0.726);
+    text-decoration: none;
+    margin-left: 10px;
 }
