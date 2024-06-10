@@ -8,11 +8,12 @@
 <style>
     body {
         font-family: sans-serif;
-        margin: 0;
+        margin: 0 10px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        min-height: 100vh;
     }
 
     header {
@@ -48,6 +49,32 @@
     .first_main {
         width: 100%;
         max-width: 800px;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        object-fit: contain;
+    }
+
+    .first_text {
+        
+    }
+
+    .first_text {
+
+    }
+    
+    .first_image {
+        max-width: 60%;
+        width: 100%; /* Distribuição da largura para cada div, considerando uma pequena margem entre elas */
+        display: flex; /* Torna as divs flexíveis */
+    }
+
+    .first_image img {
+        max-width: 100%;
+        width: auto;
+        max-height: 100%;
+        height: auto;
     }
 </style>
 <body>
@@ -64,7 +91,13 @@
         </div>
     </header>
     <main class="first_main" style="border-style: solid">
-        HELLo
+        <div class="first_text" style="border-style: solid; border-color: red;">
+            <h2>Go fuck yourself</h2>
+            <p>Bitch, I gotta say that</p>
+        </div>
+        <div class="first_image" style="border-style: solid; border-color: blue;">
+            <img src="./imagem-criacao-de-sites-600x450px.png" alt="">
+        </div>
     </main>
 </body>
 <script>
